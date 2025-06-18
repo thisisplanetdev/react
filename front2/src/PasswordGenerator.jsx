@@ -39,7 +39,7 @@ const PasswordGenerator = () => {
   }, [strin]); // This only triggers when strin changes
 
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center">
+    <div className="min-h-screen  bg-black flex items-center justify-center">
       <div className="bg-[#1e293b] p-6 rounded-xl w-full max-w-md shadow-lg text-white">
         <h1 className="text-center text-xl font-semibold mb-4">Password generator</h1>
 
