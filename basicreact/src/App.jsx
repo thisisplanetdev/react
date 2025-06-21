@@ -1,7 +1,11 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 
 import './App.css'
 import { use } from 'react'
+import Login from './components/Login'
+import Profile from './components/Profile'
+import UserContextProvider from './context/UserContextProvider'
+import userContext from './context/UserContext'
 //counter state
 // function App() {
   
@@ -22,11 +26,13 @@ import { use } from 'react'
 //     </>
 //   )
 // }
-
 function App(){
   return (<>
-  <h2>this is first</h2>
+  <UserContextProvider>
+  <Login />
+  <div>this is test</div>
+  <Profile />
+  </UserContextProvider>
   </>
   )
 }
-export default App
